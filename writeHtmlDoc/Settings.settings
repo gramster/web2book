@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="web2book" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HtmlDocPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\Program Files\Easy Software Products\HTMLDOC</Value>
+    </Setting>
+    <Setting Name="HtmlDocOptions" Type="System.String" Scope="User">
+      <Value Profile="(Default)">--links --toclevels 2 --gray --header ... --footer ... --textcolor black --verbose --no-title</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

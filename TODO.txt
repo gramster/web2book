@@ -1,0 +1,11 @@
+- lit/chm file support (http://savannah.nongnu.org/projects/chmspec, http://www.speakeasy.org/~russotto/chm/chmformat.html, http://chmspec.nongnu.org/latest/)
+- tables in RTF writer
+- categories for published feeds
+- cookie and login support
+- finish the ReadImage and ReadOutlook plugins
+- add help links for sources/sinks that open a browser with help
+- clean up &quot; style stuff from HTML before outputting it
+- Lit and image books should have Customize UI which allows browsing for the input file
+
+
+ 

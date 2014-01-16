@@ -1,0 +1,97 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2348F286-0E16-46D9-BF4C-9F7776C13ED3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>web2book</RootNamespace>
+    <AssemblyName>ReadWeb</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="FeedSource.cs" />
+    <Compile Include="GutenbergBook.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RssFeedCustomizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RssFeedCustomizeForm.Designer.cs">
+      <DependentUpon>RssFeedCustomizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebContentSource.cs" />
+    <Compile Include="WebPageCustomizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebPageCustomizeForm.Designer.cs">
+      <DependentUpon>WebPageCustomizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebPageSource.cs">
+    </Compile>
+    <Compile Include="WebSource.cs" />
+    <Compile Include="WikipediaSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISource\ISource.csproj">
+      <Project>{06C90B65-EEDF-4998-AD0E-2ACF69B02307}</Project>
+      <Name>ISource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{E23B5763-02C4-47F9-934B-C100DD9C9894}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RssFeedCustomizeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RssFeedCustomizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebPageCustomizeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WebPageCustomizeForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

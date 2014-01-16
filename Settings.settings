@@ -1,0 +1,69 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="web2book" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="OutputPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\Tmp</Value>
+    </Setting>
+    <Setting Name="SyncToDevice" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DeleteAfterSync" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Username" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mobileread</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prs500</Value>
+    </Setting>
+    <Setting Name="LeftMargin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="RightMargin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="TopMargin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="BottomMargin" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="PageWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">133</Value>
+    </Setting>
+    <Setting Name="PageHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">169</Value>
+    </Setting>
+    <Setting Name="FontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="Typeface" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="OutputFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HTML</Value>
+    </Setting>
+    <Setting Name="AutoUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AutoUpdateTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SyncDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Sony PRS-500</Value>
+    </Setting>
+    <Setting Name="DeleteFiles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HtmlTidyPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\Program Files\Tidy\Tidy.exe</Value>
+    </Setting>
+    <Setting Name="DisplayWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DisplayHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

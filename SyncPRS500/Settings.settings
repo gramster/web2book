@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="web2book" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c:\Program Files\Sony\CONNECT Reader\Data\bin</Value>
+    </Setting>
+    <Setting Name="ReaderTargetPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/Data/media/books/</Value>
+    </Setting>
+    <Setting Name="UseStorageCard" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

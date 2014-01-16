@@ -1,0 +1,205 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F9CC0B1B-F309-4B34-B7AF-5A46B7747DA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>web2book</RootNamespace>
+    <AssemblyName>Web2Book</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommentForm.Designer.cs">
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContentSourceList.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommentForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CommentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegExpTesterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegExpTesterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubscribeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SubscribeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="RegExpTesterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegExpTesterForm.Designer.cs">
+      <DependentUpon>RegExpTesterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SubscribeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubscribeForm.Designer.cs">
+      <DependentUpon>SubscribeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="IHtmlConverter\IHtmlConverter.csproj">
+      <Project>{9331E207-571E-4791-85B5-92FD0F0DC424}</Project>
+      <Name>IHtmlConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="ISource\ISource.csproj">
+      <Project>{06C90B65-EEDF-4998-AD0E-2ACF69B02307}</Project>
+      <Name>ISource</Name>
+    </ProjectReference>
+    <ProjectReference Include="ISyncDevice\ISyncDevice.csproj">
+      <Project>{93F2C51F-CE6E-40B3-883E-345C90CA0F6B}</Project>
+      <Name>ISyncDevice</Name>
+    </ProjectReference>
+    <ProjectReference Include="ITextSharpConverter\ITextSharpConverter.csproj">
+      <Project>{D5C4706F-F0A9-405F-B7D7-3403B8F22273}</Project>
+      <Name>ITextSharpConverter</Name>
+    </ProjectReference>
+    <ProjectReference Include="ParseHtml\ParseHtml.csproj">
+      <Project>{9FE0FF14-1550-4E92-8F07-9005FCCD7BBD}</Project>
+      <Name>ParseHtml</Name>
+    </ProjectReference>
+    <ProjectReference Include="ReadLit\ReadLit.csproj">
+      <Project>{E148384C-5D72-47AB-B9D9-79E8B0A98981}</Project>
+      <Name>ReadLit</Name>
+    </ProjectReference>
+    <ProjectReference Include="ReadWeb\ReadWeb.csproj">
+      <Project>{2348F286-0E16-46D9-BF4C-9F7776C13ED3}</Project>
+      <Name>ReadWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="SyncPRS500\SyncPRS500.csproj">
+      <Project>{CDCCC873-15A3-474B-B8B1-D933E751EB39}</Project>
+      <Name>SyncPRS500</Name>
+    </ProjectReference>
+    <ProjectReference Include="Utils\Utils.csproj">
+      <Project>{E23B5763-02C4-47F9-934B-C100DD9C9894}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="writeHtmlDoc\writeHtmlDoc.csproj">
+      <Project>{426DF39A-DD30-48A1-B978-B4CBCFEC33B1}</Project>
+      <Name>writeHtmlDoc</Name>
+    </ProjectReference>
+    <ProjectReference Include="WriteLRF\WriteLRF.csproj">
+      <Project>{EBD76A83-042F-4CFB-9EC9-E16D9F5EA3A1}</Project>
+      <Name>WriteLRF</Name>
+    </ProjectReference>
+    <ProjectReference Include="writePDF\writePDF.csproj">
+      <Project>{D77E75A9-7244-4DC8-A927-7C580209599B}</Project>
+      <Name>writePDF</Name>
+    </ProjectReference>
+    <ProjectReference Include="writeRTF\writeRTF.csproj">
+      <Project>{0E5E5270-0743-49F0-BD32-9AB91D9CD682}</Project>
+      <Name>writeRTF</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
