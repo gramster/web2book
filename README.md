@@ -8,7 +8,7 @@ e-book reader. It was quite popular at the time, but after I sold
 the reader it stagnated. Kovid Goyal encouraged me to implement it 
 in Python instead of C# to make it cross-platform but at the time I
 didn't know Python. So he went ahead and made his own, web2disk, which
-gradually evolved into the now well known Calibre.
+gradually evolved into the now well known Calibre (https://calibre-ebook.com/).
 
 More about this:
 
