@@ -1,7 +1,7 @@
 web2book
 ========
 
-A web scraper that outputs to e-book readers.
+A web scraper/document converter that outputs to e-book readers.
 
 This is a project I created back in 2006/7 when I got an early Sony 
 e-book reader. It was quite popular at the time, but after I sold
